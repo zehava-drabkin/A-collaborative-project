@@ -1,7 +1,4 @@
-﻿using Ffmpeg.Core;
-using Ffmpeg.Core.Entities;
-using Ffmpeg.Core.FluenntBuilder;
-using Ffmpeg.Core.Service;
+﻿using Ffmpeg.Command.Requests;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ffmpeg.Service
+namespace Ffmpeg.Command.Commands
 {
-    public class WatermarkService : IWatermarkService
+    public class WatermarkCommand
     {
         public async Task<Result> AddWatermarkAsync(WatermarkRequest request)
         {

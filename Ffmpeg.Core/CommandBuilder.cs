@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ffmpeg.Core.FluenntBuilder
+namespace Ffmpeg.Core
 {
     public class CommandBuilder
     {

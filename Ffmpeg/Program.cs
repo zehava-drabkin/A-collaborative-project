@@ -1,13 +1,12 @@
-using Ffmpeg.Core.Entities;
-using Ffmpeg.Core.Service;
-using Ffmpeg.Service;
+using Ffmpeg.Command.Commands;
+using Ffmpeg.Command.Requests;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IWatermarkService, WatermarkService>();
+builder.Services.AddScoped<WatermarkCommand>();
 
 var app = builder.Build();
 
@@ -21,9 +20,9 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-app.MapPost("/add-watermark", async (WatermarkRequest request, IWatermarkService watermarkService) =>
+app.MapPost("/add-watermark", async (WatermarkRequest request, WatermarkCommand watermarkCommand) =>
 {
-    var result = await watermarkService.AddWatermarkAsync(request);
+    var result = await watermarkCommand.AddWatermarkAsync(request);
     return result.IsSuccess ? Results.Ok(result.OutputPath) : Results.BadRequest(result.ErrorMessage);
 });
 
