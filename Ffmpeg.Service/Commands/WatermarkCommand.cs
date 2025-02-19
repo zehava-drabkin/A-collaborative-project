@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Ffmpeg.Command.Commands
 {
-    public class WatermarkCommand
+    public class WatermarkCommand : ICommandRunner<WatermarkRequest>
     {
-        public async Task<Result> AddWatermarkAsync(WatermarkRequest request)
+        public async Task<Result> Run(WatermarkRequest request)
         {
             var outputFilePath = Path.Combine(Path.GetDirectoryName(request.ImagePath), "output.jpg");
 

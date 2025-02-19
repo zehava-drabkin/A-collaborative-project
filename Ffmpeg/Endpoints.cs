@@ -9,7 +9,7 @@ namespace Ffmpeg
         {
             app.MapPost("/add-watermark", async (WatermarkRequest request, WatermarkCommand watermarkCommand) =>
             {
-                var result = await watermarkCommand.AddWatermarkAsync(request);
+                var result = await watermarkCommand.Run(request);
                 return result.IsSuccess ? Results.Ok(result.OutputPath) : Results.BadRequest(result.ErrorMessage);
             });
         }
