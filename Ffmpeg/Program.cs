@@ -1,3 +1,4 @@
+using Ffmpeg;
 using Ffmpeg.Command.Commands;
 using Ffmpeg.Command.Requests;
 
@@ -20,10 +21,6 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-app.MapPost("/add-watermark", async (WatermarkRequest request, WatermarkCommand watermarkCommand) =>
-{
-    var result = await watermarkCommand.AddWatermarkAsync(request);
-    return result.IsSuccess ? Results.Ok(result.OutputPath) : Results.BadRequest(result.ErrorMessage);
-});
+app.MapEndpoints();
 
 app.Run();
