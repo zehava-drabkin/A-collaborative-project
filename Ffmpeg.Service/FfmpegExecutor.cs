@@ -31,6 +31,5 @@ namespace Ffmpeg.Command
 
             return process.ExitCode == 0;
         }
-
     }
 }
