@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ffmpeg.Service\Ffmpeg.Command.csproj" />
+    <ProjectReference Include="..\Ffmpeg.Command\Ffmpeg.Command.csproj" />
   </ItemGroup>
 
 </Project>

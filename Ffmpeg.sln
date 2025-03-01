@@ -5,7 +5,7 @@ VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ffmpeg", "Ffmpeg\Ffmpeg.csproj", "{AB76771F-272A-469C-A69A-F0F8D0F83C1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ffmpeg.Command", "Ffmpeg.Service\Ffmpeg.Command.csproj", "{1C9800AA-03E4-4B40-8E11-4D05E5F10DAE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ffmpeg.Command", "Ffmpeg.Command\Ffmpeg.Command.csproj", "{8E3619D0-AE4F-5EAD-011E-53D189B3AD91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{AB76771F-272A-469C-A69A-F0F8D0F83C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB76771F-272A-469C-A69A-F0F8D0F83C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB76771F-272A-469C-A69A-F0F8D0F83C1A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1C9800AA-03E4-4B40-8E11-4D05E5F10DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C9800AA-03E4-4B40-8E11-4D05E5F10DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1C9800AA-03E4-4B40-8E11-4D05E5F10DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1C9800AA-03E4-4B40-8E11-4D05E5F10DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E3619D0-AE4F-5EAD-011E-53D189B3AD91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E3619D0-AE4F-5EAD-011E-53D189B3AD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E3619D0-AE4F-5EAD-011E-53D189B3AD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E3619D0-AE4F-5EAD-011E-53D189B3AD91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

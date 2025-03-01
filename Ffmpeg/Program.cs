@@ -1,16 +1,17 @@
 using Ffmpeg;
+using Ffmpeg.Command;
 using Ffmpeg.Command.Commands;
-using Ffmpeg.Command.Requests;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddTransient<CommandBuilder>();
 builder.Services.AddScoped<WatermarkCommand>();
 
 var app = builder.Build();
-
+ 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

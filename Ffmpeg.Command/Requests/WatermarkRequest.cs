@@ -8,8 +8,9 @@ namespace Ffmpeg.Command.Requests
 {
     public class WatermarkRequest
     {
-        public string ImagePath { get; set; }
-        public string WatermarkPath { get; set; }
+        public string ImageName { get; set; }
+        public string WatermarkImageName { get; set; }
+        public string OutputImageName { get; set; }
         public int XPos { get; set; }
         public int YPos { get; set; }
     }
