@@ -18,7 +18,9 @@ namespace Ffmpeg.Command
 
         private string AddPath(string name)
         {
-            return $"{_configuration["Ffmpeg:inputsUrl"]}{name}";
+            var configPath = _configuration["FFmpeg:inputsUrl"];
+            configPath = Environment.ExpandEnvironmentVariables(configPath);
+            return $"{configPath}{name}";
         }
 
         public CommandBuilder SetInput(string name)
